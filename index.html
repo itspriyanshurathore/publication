@@ -49,12 +49,15 @@
         class="container mx-auto px-2 py-2 flex justify-between items-center"
       >
         <!-- Logo -->
-        <div class="text-1xl font-bold">
-          <a href="/" class="hover:text-blue-300">
+        <div class="relative bottom-2 bg-blue-800 p-5 text-1xl font-bold">
+          <a
+            href="/"
+            class="absolute w-24 rounded-full top-0 p-2 bg-blue-800 left-0 hover:text-blue-300"
+          >
             <img
               src="/images/logo.png"
               alt="logo"
-              class="w-20 rounded-full block bg-transparent"
+              class="w-full rounded-full block bg-transparent"
             />
           </a>
         </div>
@@ -138,7 +141,9 @@
         class="relative z-10 w-full max-w-7xl mx-auto md:px-4 grid md:grid-cols-2 gap-10 items-center"
       >
         <!-- Left Content -->
-        <div class="text-white mb-32 md:mb-48 px-4 md:px-8 text-center">
+        <div
+          class="text-white mb-0 pt-10 md:pt-0 md:mb-48 px-4 md:px-8 text-center"
+        >
           <!-- Heading -->
           <h1
             class="w-full text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in-up"
@@ -192,7 +197,7 @@
         </div>
 
         <!-- Right Form -->
-        <div class="bg-white p-12 rounded-xl shadow-lg mt-80">
+        <div class="bg-white p-12 rounded-xl shadow-lg md:mt-80">
           <h3 class="text-xl font-bold text-gray-800 mb-1">
             Struggling with Journal Publications
           </h3>
