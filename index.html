@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publication Support</title>
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images/favicon-96x96.png"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./images/site.webmanifest" />
+
     <!--Script of JS  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Styles-->
@@ -55,7 +70,7 @@
             class="absolute w-24 rounded-full top-0 p-2 bg-blue-800 left-0 hover:text-blue-300"
           >
             <img
-              src="/images/logo.png"
+              src="./images/logo.png"
               alt="logo"
               class="w-full rounded-full block bg-transparent"
             />
@@ -203,7 +218,10 @@
           </h3>
           <p class="text-blue-700 font-semibold mb-6">We Help You Succeed</p>
 
-          <form class="space-y-4">
+          <form
+            class="space-y-4"
+            onsubmit="emailSend(); reset(); return false;"
+          >
             <div class="grid grid-cols-2 gap-4">
               <!-- Name Section -->
               <input
@@ -286,11 +304,11 @@
           </h3>
           <p class="text-lg text-gray-700 leading-relaxed text-justify">
             We are dedicated to extend all the Support needed by Researchers,
-            Scholars, Academicians and Authors in Getting their Research Papers
-            Published in Good Quality Journals. With years of experience in
-            Academic Publishing, Journal Selection, Manuscript Editing, and
-            Formatting, we serve as a trusted partner for those aiming to share
-            their knowledge with the world.
+            Scholars and Academicians in getting their Research Papers Published
+            in Good Quality Journals. With years of experience in Academic
+            Publishing, Journal Selection, Manuscript Editing and Formatting, we
+            serve as a trusted partner for those aiming to share their knowledge
+            with the world.
           </p>
           <p class="text-lg text-gray-700 leading-relaxed text-justify mt-4">
             We want to Make Publishing Stress-Free, Transparent, and Ethical So
@@ -779,16 +797,24 @@
                 <h3
                   class="text-2xl font-semibold text-blue-900 group-hover:text-blue-700 transition-colors"
                 >
-                  In-House Peer-Reviewed Journals
+                  PubMed, DOAJ, Embase, EI and Peer-Reviewed Journals
                 </h3>
               </div>
 
               <ul class="text-gray-600 space-y-2 mb-4">
                 <li class="flex items-start">
-                  <span class="text-blue-600 mr-2">•</span> Alongside Indexed
-                  Journals, We Also Provide Opportunities to Publish in Our
-                  Peer-Reviewed In-House Journals for Faster Publication and
-                  Recognition
+                  <span class="text-blue-600 mr-2">•</span> Publish article in
+                  PubMed, DOAJ and Embase Journals specially for Medical Science
+                  Researchers.
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-600 mr-2">•</span> Publish article in
+                  EI Journals specially for Engineering Researchers.
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-600 mr-2">•</span> We also Provide
+                  Opportunities to Publish article in In-House Journals for
+                  Faster Publication and Recognition.
                 </li>
               </ul>
             </div>
@@ -917,15 +943,17 @@
       </h3>
       <p class="text-blue-700 font-semibold mb-6">We Help You Succeed</p>
 
-      <form class="space-y-4">
+      <form class="space-y-4" onsubmit="emailSend(); reset(); return false;">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <input
             type="text"
+            id="name"
             placeholder="Enter Your Name"
             class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
           <input
             type="email"
+            id="email"
             placeholder="Enter Your Email"
             class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
@@ -933,23 +961,26 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <input
-            type="text"
+            type="phone"
+            id="phone"
             placeholder="Enter Contact Number"
             class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
           <select
+            id="service"
             class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
           >
-            <option>Select Service</option>
-            <option>Journal Selection</option>
-            <option>Manuscript Review</option>
-            <option>Editing Support</option>
+            <option value="">Select Service</option>
+            <option value="journal">Journal Selection</option>
+            <option value="review">Manuscript Review</option>
+            <option value="editing">Editing Support</option>
           </select>
         </div>
 
         <textarea
           rows="3"
           placeholder="Share Your Requirements"
+          id="requirements"
           class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
         ></textarea>
         <!-- Checkbox section -->
@@ -967,6 +998,7 @@
         </div>
         <!-- Button -->
         <button
+          id="submitBtn"
           type="submit"
           class="w-full bg-blue-700 hover:bg-blue-900 text-white py-3 rounded-full font-medium shadow-md transition"
         >
@@ -1106,5 +1138,7 @@
       });
     </script>
     <!-- JS for Toggle Ends here -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
