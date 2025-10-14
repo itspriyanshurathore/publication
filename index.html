@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <title>Publication Support</title>
     <!-- Favicons -->
     <link
@@ -19,14 +20,12 @@
     />
     <link rel="manifest" href="./images/site.webmanifest" />
 
+=======
+    <title>Journal Publication</title>
+>>>>>>> 06559c35e64c3b71aa377a662af0ff2b6c9ae47a
     <!--Script of JS  -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Styles-->
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
     <!-- Tailwind Animations -->
     <style>
       @keyframes fade-in-up {
@@ -59,15 +58,17 @@
 
   <body class="bg-gray-100 font-sans">
     <!-- Header Section -->
-    <header class="bg-blue-800 text-white sticky top-0 z-50 shadow-lg">
+    <header
+      class="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 text-white sticky top-0 z-50 shadow-lg"
+    >
       <div
         class="container mx-auto px-2 py-2 flex justify-between items-center"
       >
         <!-- Logo -->
-        <div class="relative bottom-2 bg-blue-800 p-5 text-1xl font-bold">
+        <div class="relative bottom-2 p-5 text-1xl font-bold">
           <a
             href="/"
-            class="absolute w-24 rounded-full top-0 p-2 bg-blue-800 left-0 hover:text-blue-300"
+            class="absolute w-24 rounded-full top-0 p-2 left-0 hover:scale-110 transform transition duration-300"
           >
             <img
               src="./images/logo.png"
@@ -97,7 +98,6 @@
             />
           </svg>
 
-          <!-- Close Icon (hidden by default) -->
           <svg
             id="close-icon"
             class="h-6 w-6 fill-current hidden"
@@ -116,25 +116,34 @@
         <!-- Nav Links -->
         <nav
           id="menu"
-          class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto bg-blue-800 md:bg-transparent px-4 md:px-0 py-4 md:py-0 transition-all duration-300 ease-in-out transform origin-top scale-y-0 md:scale-y-100"
+          class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 md:bg-transparent px-4 md:px-0 py-4 md:py-0 transition-all duration-300 ease-in-out transform origin-top scale-y-0 md:scale-y-100"
         >
-          <a href="#home" class="block py-2 md:py-0 hover:text-blue-300"
+          <a
+            href="#home"
+            class="block py-2 md:py-0 transform transition duration-300 hover:scale-110 hover:text-yellow-300"
             >Home</a
           >
-          <a href="#about" class="block py-2 md:py-0 hover:text-blue-300"
+          <a
+            href="#about"
+            class="block py-2 md:py-0 transform transition duration-300 hover:scale-110 hover:text-yellow-300"
             >About Us</a
           >
-          <a href="#whychooseus" class="block py-2 md:py-0 hover:text-blue-300"
+          <a
+            href="#whychooseus"
+            class="block py-2 md:py-0 transform transition duration-300 hover:scale-110 hover:text-yellow-300"
             >Why Choose Us</a
           >
-          <a href="#contact" class="block py-2 md:py-0 hover:text-blue-300"
+          <a
+            href="#contact"
+            class="block py-2 md:py-0 transform transition duration-300 hover:scale-110 hover:text-yellow-300"
             >Contact</a
           >
           <a
             href="#contact"
-            class="mt-4 md:mt-0 border border-white hover:bg-white hover:text-blue-700 font-medium px-6 py-2 rounded-full transition text-center"
-            >Get Started</a
+            class="mt-4 md:mt-0 border border-white hover:bg-white hover:text-yellow-950 font-medium px-6 py-2 rounded-full transition duration-300 transform hover:scale-110 text-center"
           >
+            Get Started
+          </a>
         </nav>
       </div>
     </header>
@@ -144,7 +153,7 @@
       id="home"
       class="relative min-h-screen flex items-center bg-cover bg-center opacity-100"
       style="
-        background-image: url('https://plus.unsplash.com/premium_photo-1686244744797-82e64588ecfc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-image: url('https://images.unsplash.com/photo-1620034949504-339c43e9cd56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         background-size: cover;
         background-position: center;
       "
@@ -161,7 +170,7 @@
         >
           <!-- Heading -->
           <h1
-            class="w-full text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in-up"
+            class="w-full pt-8 sm: pt-0 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in-up"
           >
             ONE STOP SOLUTION FOR ALL THE REQUIREMENTS
             <span
@@ -187,7 +196,7 @@
               their research work in
               <span class="text-blue-300 font-semibold">Scopus</span>,
               <span class="text-blue-300 font-semibold">Web of Science</span>,
-              <span class="text-blue-300 font-semibold">ABDC</span>, and other
+              <span class="text-blue-300 font-semibold">ABDC</span> and other
               top international journals with ease.
             </p>
           </div>
@@ -211,6 +220,7 @@
           </div>
         </div>
 
+<<<<<<< HEAD
         <!-- Right Form -->
         <div class="bg-white p-12 rounded-xl shadow-lg md:mt-80">
           <h3 class="text-xl font-bold text-gray-800 mb-1">
@@ -284,20 +294,28 @@
               Submit
             </button>
           </form>
+=======
+        <!-- Right Content -->
+        <div class="relative flex items-center justify-center">
+          <img
+            src="https://application.amityonline.com/lp/affiliate/images/girl.png"
+            alt="Student"
+            class="rounded-2xl shadow-lg transform transition duration-700 ease-in-out hover:scale-105 hover:shadow-2xl animate-fade-in-up"
+          />
+>>>>>>> 06559c35e64c3b71aa377a662af0ff2b6c9ae47a
         </div>
       </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-5 bg-white justify-center">
-      <div class="container mx-auto px-6 lg:px-8">
-        <h2
-          class="text-4xl font-extrabold text-gray-900 text-left mb-12 tracking-tight"
-        >
+    <section id="about" class="py-5 bg-white">
+      <div class="container mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-12 tracking-tight">
           About Us
         </h2>
 
         <!-- Who We Are -->
+<<<<<<< HEAD
         <div class="max-w-4xl mb-12">
           <h3 class="text-2xl font-semibold text-blue-900 text-left mb-6">
             Who We Are
@@ -315,12 +333,49 @@
             That You Can Focus on Your Research While We Take Care of The
             Publication Process.
           </p>
+=======
+        <div
+          class="max-w-6xl mx-auto mb-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+        >
+          <!-- Left: Text -->
+          <div>
+            <h3 class="text-2xl font-semibold text-blue-900 mb-6">
+              Who We Are
+            </h3>
+            <p class="text-lg text-gray-700 leading-relaxed text-justify">
+              We are dedicated to extend all the Support needed by Researchers,
+              Scholars and Academicians in getting their Research Papers
+              Published in Good Quality Journals. With years of experience in
+              Academic Publishing, Journal Selection, Manuscript Editing and
+              Formatting, we serve as a trusted partner for those aiming to
+              share their knowledge with the world.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed text-justify mt-4">
+              We want to Make Publishing Stress-Free, Transparent, and Ethical
+              So That You Can Focus on Your Research While We Take Care of The
+              Publication Process.
+            </p>
+          </div>
+
+          <!-- Right: Image with blue background -->
+          <div class="flex justify-center">
+            <div class="bg-blue-100 rounded-3xl p-6 shadow-lg inline-block">
+              <img
+                src="https://www.bookrivers.com/ourblog/wp-content/uploads/2022/02/bookriver-self-publishers-paving-the-way-for-bestsellers.jpg"
+                alt="Who We Are"
+                class="h-72 w-auto object-cover rounded-2xl shadow-md transform transition duration-700 ease-in-out hover:scale-105 hover:shadow-xl"
+              />
+            </div>
+          </div>
+>>>>>>> 06559c35e64c3b71aa377a662af0ff2b6c9ae47a
         </div>
 
         <!-- Our Mission and Vision -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-1 mb-12">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12"
+        >
           <div
-            class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-in-out text-center"
+            class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-in-out"
           >
             <h3 class="text-2xl font-semibold text-blue-900 mb-4">
               Our Mission
@@ -332,7 +387,7 @@
             </p>
           </div>
           <div
-            class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-in-out text-center"
+            class="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-in-out"
           >
             <h3 class="text-2xl font-semibold text-blue-900 mb-4">
               Our Vision
@@ -344,99 +399,211 @@
             </p>
           </div>
         </div>
+        <!-- Service Publication-support-->
+        <section class="py-12 bg-gray-50">
+          <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-6">
+              Services
+            </h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-10">
+              End-to-end academic and publishing support — organizing events,
+              manuscript help, Scopus/Web of Science journals, and more.
+            </p>
 
-        <!-- What We Do -->
-        <div class="max-w-5xl mx-auto">
-          <h3 class="text-2xl font-semibold text-blue-900 text-left mb-6">
-            What We Do
-          </h3>
-
-          <div class="flex flex-wrap gap-6">
-            <!-- Card Item -->
-            <div
-              class="flex items-start gap-3 max-w-sm p-3 rounded-lg transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-md"
-            >
-              <svg
-                class="h-6 w-6 text-blue-600 mt-1 transform transition-transform duration-300 group-hover:scale-125"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+            <!-- grid -->
+            <div class="services-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- card 1 -->
+              <div
+                class="group bg-blue-50 p-6 md:p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-105 relative overflow-hidden max-w-3xl mx-auto flex flex-col"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <p class="text-gray-700 text-justify transition-all duration-300">
-                Journal Publication Support – End-to-End Publication Assistance
-                for Scopus, Web of Science, PubMed Journals.
-              </p>
-            </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-blue-200 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                ></div>
 
-            <!-- Card Item -->
-            <div
-              class="flex items-start gap-3 max-w-sm p-3 rounded-lg transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-md"
-            >
-              <svg
-                class="h-6 w-6 text-blue-600 mt-1 transform transition-transform duration-300 group-hover:scale-125"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <p class="text-gray-700 text-justify transition-all duration-300">
-                Manuscript Editing & Proofreading – Enhance Clarity, Grammar
-                Correction, Correction in the Structure of the Paper.
-              </p>
-            </div>
+                <div class="relative z-10 flex flex-col flex-1">
+                  <div class="flex justify-center mb-6">
+                    <div
+                      class="w-20 h-20 rounded-lg flex items-center justify-center bg-white/60 ring-1 ring-white shadow-sm"
+                    >
+                      <img
+                        src="https://static.thenounproject.com/png/1861303-200.png"
+                        alt="logo"
+                        class="h-16"
+                      />
+                    </div>
+                  </div>
 
-            <!-- Card Item -->
-            <div
-              class="flex items-start gap-3 max-w-sm p-3 rounded-lg transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-md"
-            >
-              <svg
-                class="h-6 w-6 text-blue-600 mt-1 transform transition-transform duration-300 group-hover:scale-125"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <p class="text-gray-700 text-justify transition-all duration-300">
-                Plagiarism Checking & Correction – Ensure Originality and
-                Compliance with Academic Standards.
-              </p>
-            </div>
+                  <div class="flex-1 text-left flex flex-col">
+                    <h3
+                      class="text-xl font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3 truncate"
+                    >
+                      Journal Publication Support
+                    </h3>
 
-            <!-- Card Item -->
-            <div
-              class="flex items-start gap-3 max-w-sm p-3 rounded-lg transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-md"
-            >
-              <svg
-                class="h-6 w-6 text-blue-600 mt-1 transform transition-transform duration-300 group-hover:scale-125"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+                    <p class="text-gray-600 mb-3">
+                      We provide publication opportunities in Scopus, Web of
+                      Science and ABDC Indexed Journals.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Pre-Submission Review
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Journal Selection &amp; Submission
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Assistance in Revision and Resubmission
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Arranging Discount on APC / Funding
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Citation Increasing Strategies
+                      </li>
+                    </ul>
+
+                    <!-- button at bottom -->
+                    <div class="mt-auto flex justify-center">
+                      <a
+                        href="#contact"
+                        class="bg-blue-700 hover:bg-blue-900 hover:scale-105 hover:shadow-xl text-white font-medium px-6 py-3 rounded-full shadow-lg transition transform"
+                      >
+                        Request Journal Guidance
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="group bg-blue-50 p-6 md:p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-105 relative overflow-hidden max-w-3xl mx-auto flex flex-col"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <p class="text-gray-700 text-justify transition-all duration-300">
-                Formatting & Submission Assistance – Proper Alignment with
-                Journal Guidelines.
-              </p>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-blue-200 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                ></div>
+
+                <div class="relative z-10 flex flex-col flex-1">
+                  <div class="flex justify-center mb-6">
+                    <div
+                      class="w-20 h-20 rounded-lg flex items-center justify-center bg-white/60 ring-1 ring-white shadow-sm"
+                    >
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/80/80120.png"
+                        alt="logo1"
+                        class="h-16"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="flex-1 text-left flex flex-col">
+                    <h3
+                      class="text-xl font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3 truncate"
+                    >
+                      Academic Events & Programs
+                    </h3>
+
+                    <p class="text-gray-600 mb-3">
+                      We specialize in organizing professional and academic
+                      events that bring researchers, educators, and
+                      professionals together:
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        International &amp; National Conferences with ISBN
+                        Proceedings and Journal Publications
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Seminars, Workshops, and Faculty Development Programs
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Award Functions – Recognizing Excellence in Research,
+                        Teaching, and Academic Leadership
+                      </li>
+                    </ul>
+
+                    <!-- button at bottom -->
+                    <div class="mt-auto flex justify-center">
+                      <a
+                        href="#contact"
+                        class="bg-blue-700 hover:bg-blue-900 hover:scale-105 hover:shadow-xl text-white font-medium px-6 py-3 rounded-full shadow-lg transition transform"
+                      >
+                        Organize an Event with Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="group bg-blue-50 p-6 md:p-8 rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-105 relative overflow-hidden max-w-3xl mx-auto flex flex-col"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-blue-200 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                ></div>
+
+                <div class="relative z-10 flex flex-col flex-1">
+                  <div class="flex justify-center mb-6">
+                    <div
+                      class="w-20 h-20 rounded-lg flex items-center justify-center bg-white/60 ring-1 ring-white shadow-sm"
+                    >
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNO4ukCi3ufPOAGpOyqv8tWKmNp-_su0-L8Q&s"
+                        alt="logo3"
+                        class="h-16"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="flex-1 text-left flex flex-col">
+                    <h3
+                      class="text-xl font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-3 truncate"
+                    >
+                      Manuscript Editing
+                    </h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Manuscript Editing & Formatting
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Language / Grammar Editing
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Artwork Editing
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        Proofreading and Plagiarism Check
+                      </li>
+                    </ul>
+
+                    <!-- button at bottom -->
+                    <div class="mt-auto flex justify-center">
+                      <a
+                        href="#contact"
+                        class="bg-blue-700 hover:bg-blue-900 hover:scale-105 hover:shadow-xl text-white font-medium px-6 py-3 rounded-full shadow-lg transition transform"
+                      >
+                        Submit Your Manuscript
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
 
@@ -805,16 +972,28 @@
                 <li class="flex items-start">
                   <span class="text-blue-600 mr-2">•</span> Publish article in
                   PubMed, DOAJ and Embase Journals specially for Medical Science
+<<<<<<< HEAD
                   Researchers.
                 </li>
                 <li class="flex items-start">
                   <span class="text-blue-600 mr-2">•</span> Publish article in
                   EI Journals specially for Engineering Researchers.
+=======
+                  Researchers
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-600 mr-2">•</span> Publish article in
+                  EI Journals specially for Engineering Researchers
+>>>>>>> 06559c35e64c3b71aa377a662af0ff2b6c9ae47a
                 </li>
                 <li class="flex items-start">
                   <span class="text-blue-600 mr-2">•</span> We also Provide
                   Opportunities to Publish article in In-House Journals for
+<<<<<<< HEAD
                   Faster Publication and Recognition.
+=======
+                  Faster Publication and Recognition
+>>>>>>> 06559c35e64c3b71aa377a662af0ff2b6c9ae47a
                 </li>
               </ul>
             </div>
@@ -1109,6 +1288,7 @@
         </div>
       </div>
     </footer>
+<<<<<<< HEAD
     <!-- JS for Toggle -->
     <script>
       const btn = document.getElementById("menu-btn");
@@ -1139,6 +1319,8 @@
     </script>
     <!-- JS for Toggle Ends here -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+=======
+>>>>>>> 06559c35e64c3b71aa377a662af0ff2b6c9ae47a
     <script src="scripts.js"></script>
   </body>
 </html>

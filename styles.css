@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.book {
+  perspective: 1200px;
+}
+
+.cover {
+  transform-origin: left;
+  transition: transform 0.8s ease-in-out;
+  backface-visibility: visible;
+}
+
+.book.open .cover {
+  transform: rotateY(-150deg);
+}
+#book {
+  perspective: 1000px;
+}
+
+#book:hover {
+  transform: rotateX(15deg) translateY(-1rem);
+}
+
+#book {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
